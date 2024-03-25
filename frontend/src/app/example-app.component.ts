@@ -76,4 +76,10 @@ export class ExampleAppComponent extends PathAppComponent {
         return super.getCustomComponentClass(componentType);
     }
 
+    showTimeAndDate() {
+        const now = new Date();
+        alert(`Current date and time: ${now}`);
+    }
+
 }
+

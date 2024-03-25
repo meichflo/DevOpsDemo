@@ -95,7 +95,7 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen bei DevOps</h4>",
+                            "value": "<h4>Hallo bei der DevOps-Aufgabe von Florian</h4>",
                             "newRow": true
                         },
                         {
@@ -106,6 +106,37 @@ export class GuiModel {
                             "page": "toDoPage",
                             "width": 2,
                             "newRow": true,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Show Time and Date" },
+                            "icon": "fa-clock",
+                            "color": "blue",
+                            "page": "TimePage",
+                            "width": 2,
+                            "newRow": true,
+                        },
+                    ]
+                },
+                {
+                    "id": "TimePage",
+                    "elementList": [
+                        {
+                            "type": "pageLabel",
+                            "value": "<h3>Hier steht die aktuelle Zeit von Florian</h3>",
+                            "newRow": true
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Current Time: " + new Date().toLocaleString() },
+                            "text": "Hello world!",
+                            "color": "wisteria",
+                            "width": 3,
+                            "icon": "fa-backward",
+                            "newRow": true,
+                        },
+                        {
+                            "type": "backbutton",
                         },
                     ]
                 },
