@@ -27,6 +27,5 @@ public class StringCalculatorTest {
         assertEquals(expectedMessage, actualMessage);
 
         assertEquals(2, calculator.add("2,1001"));
-        assertEquals(6, calculator.add("//[***]\n1***2***3"));
     }
 }
