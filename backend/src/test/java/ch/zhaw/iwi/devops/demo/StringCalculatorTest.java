@@ -1,5 +1,6 @@
 package ch.zhaw.iwi.devops.demo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,5 +16,14 @@ public class StringCalculatorTest {
         assertEquals(10, calculator.add("1,2,3,4"));
         assertEquals(6, calculator.add("1\n2,3"));
         assertEquals(3, calculator.add("//;\n1;2"));
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.add("1,-2,-3");
+        });
+
+        String expectedMessage = "negatives not allowed: [-2, -3]";
+        String actualMessage = exception.getMessage();
+
+        assertEquals(expectedMessage, actualMessage);
     }
 }
