@@ -25,5 +25,7 @@ public class StringCalculatorTest {
         String actualMessage = exception.getMessage();
 
         assertEquals(expectedMessage, actualMessage);
+
+        assertEquals(2, calculator.add("2,1001"));
     }
 }
