@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-public class ToDoController {
+class ToDoController {
 
     private Map<Integer, ToDo> todos = new HashMap<Integer, ToDo>();
 
