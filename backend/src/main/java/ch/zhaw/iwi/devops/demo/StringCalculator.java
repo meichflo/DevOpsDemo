@@ -14,7 +14,7 @@ public class StringCalculator {
             int delimiterStart = numbers.indexOf("//") + 2;
             int delimiterEnd = numbers.indexOf("\n");
             delimiter = numbers.substring(delimiterStart, delimiterEnd);
-            delimiter = delimiter.substring(1, delimiter.length() ); // Remove the brackets
+            delimiter = delimiter.substring(1, delimiter.length() - 1); // Remove the brackets
             delimiter = delimiter.replace("][", "|"); // Replace ][ with | to create a regex pattern
             numbers = numbers.substring(numbers.indexOf("\n") + 1);
         }
