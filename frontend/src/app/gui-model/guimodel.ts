@@ -95,7 +95,12 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Hallo bei der DevOps-Aufgabe von Florian</h4>",
+                            "value": "<h3>Hallo bei der DevOps-Aufgabe von Florian</h3>",
+                            "newRow": true
+                        },
+                        {
+                            "type": "pageLabel",
+                            "value": "<h5>Dieser Text ist erst nach dem GitHub Actions Deployment sichtbar</h5>",
                             "newRow": true
                         },
                         {
