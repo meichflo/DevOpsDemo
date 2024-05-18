@@ -111,6 +111,7 @@ export class GuiModel {
                             "page": "toDoPage",
                             "width": 2,
                             "newRow": true,
+                            "tooltip": { default: "Click to view the To-Do List" },
                         },
                         {
                             "type": "button",
